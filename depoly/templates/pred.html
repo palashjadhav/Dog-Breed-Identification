@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>DOG BREED IDENTIFICATION</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">WELCOME TO DOG BREED IDENTIFICATION</h1>
+    <h4 style="text-align: center">Please select Dog image</h4>
+    <div class="form">
+        <form action="/predict" method="POST" enctype="multipart/form-data">
+            <input type="file" id="myfile" name="myfile">
+            <input type="submit">
+        </form>
+    </div>
+</div>
+{% endblock %}
